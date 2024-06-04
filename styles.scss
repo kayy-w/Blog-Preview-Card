@@ -1,0 +1,113 @@
+$Yellow: hsl(47, 88%, 63%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 50%);
+$Black: hsl(0, 0%, 7%);
+
+$Small: clamp(0.9em, 1.6vw, 1em);
+$Med: clamp(1em, 2.2vw, 1.2em);
+$Large: clamp(1.6em, 3vw, 1.8em);
+
+body {
+    background: $Yellow;
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: $Black;
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.blog-post {
+    background: $White;
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 384px;
+    align-self: center;
+    box-shadow: $Black 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    border: 1px $Black solid;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+    .blog-img {
+        padding: 0;
+        flex-basis: 100%;
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border-radius: 10px;
+        }
+    }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $Black 16px 16px;
+    }
+    .blog-post-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    p.category {
+        padding: 4px 12px;
+        border-radius: 4px;
+        background: $Yellow;
+        margin: 0;
+        font-size: $Small;
+        font-weight: 800;
+    }
+    p.date {
+        font-size: $Small;
+        margin: 0;
+    }
+    h2 {
+        font-size: $Large;
+        padding: 0;
+        margin: 0;
+        color: $Black;
+        a {
+            text-decoration: none;
+            color: $Black;
+            &:hover, &:focus {
+                color: $Yellow;
+            } 
+        }        
+    }
+    p.description {
+        color: $Grey;
+        font-size: $Med;
+        line-height: 1.6em;
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+    }
+    p.author {
+        background: url(assets/images/image-avatar.webp) left no-repeat;
+        background-size: 32px;
+        padding: 8px 0 8px 44px;
+        margin: 0;
+        font-size: $Small;
+        font-weight: 800;
+    }
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 100vh;
+    padding: 0 0 5px;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
