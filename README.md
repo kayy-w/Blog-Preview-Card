@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](http://)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-blog-preview-card-with-no-media-queries-hFFjkRd1XH](https://www.frontendmentor.io/solutions/responsive-blog-preview-card-with-no-media-queries-hFFjkRd1XH)
 - Live Site URL: [https://kayy-w.github.io/Blog-Preview-Card/](https://kayy-w.github.io/Blog-Preview-Card/)
 
 ## My process
